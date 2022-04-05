@@ -64,7 +64,7 @@ while True:
                                              reply_markup=bkeyboard)
                             count = i + 1
                         bot.send_message(message.chat.id, "Here " + str(
-                            count) + " message we're found\nClick on the below button to read the message\n\n Further Queries @riz4d")
+                            count) + " message we're found\nHaga clic en el botón de abajo para leer el mensaje\n\n Further Queries @blankito08")
                     else:
                         bot.send_message(message.chat.id, 'Nothing found', reply_markup=bkeyboard)
                 except BaseException:
