@@ -20,7 +20,7 @@ while True:
         @bot.message_handler(commands=['start'])
         def start_message(message):
             bot.send_message(message.chat.id,
-                             'Hey User., Bienvenido a Fakems Bot \nUsage:_\nPara generar correos electrónicos haciendo clic en el button "Generate email"\nTo refresh your inbox click on the button "Refresh inbox". After a new letter arrives, you will see a button with a subject line, click on this button to read the message. \n\n Dev : @riz4d',
+                             'Hey User., Bienvenido a Fakems Bot \nUsage:_\nPara generar correos electrónicos haciendo clic en el button "Generate email"\nPara actualizar su bandeja de entrada, haga clic en el botón "Refresh inbox".Después de que llegue una nueva carta, verá un botón con una línea de asunto, click en este botón para leer el message. \n\n By : @Blankito08',
                              reply_markup=keyboard)
 
 
@@ -38,7 +38,7 @@ while True:
                 bot.send_message(message.chat.id, 'First, generate an email', reply_markup=keyboard)
             elif message.text.lower() == 'about':
                 bot.send_message(message.chat.id,
-                                 'What is Mystery Mail?\n- it is a free email service that allows to receive email at a temporary address that self-destructed after a certain time elapses. It is also known by names like tempmail, 10minutemail, 10minmail, throwaway email, fake-mail , fake email generator, burner mail or trash-mail\n\nHow Mystery Mail Become Safer You?\n- Using the temporary mail allows you to completely protect your real mailbox against the loss of personal information. Your temporary e-mail address is completely anonymous. Your details: information about your person and users with whom you communicate, IP-address, e-mail address are protected and completely confidential.\n\n➪ Bot Name : MysteryMail\n➪ Author : @riz4d\n➪ Language : Python \n➪ Donate : https://www.paypal.com/paypalme/rizadx96')
+                                 'Que es Fakems?\n- es un servicio de correo electrónico gratuito que permite recibir correo electrónico en una dirección temporal que se autodestruye después de que transcurre cierto tiempo. También es conocido por nombres como tempmail, 10minutemail, 10minmail, correo electrónico desechable, correo falso, generador de correo electrónico falso, correo quemador o correo basura\n\nPorque el correo fake se vuelve más seguro para usted?\n- El uso del correo temporal le permite proteger completamente su buzón real contra la pérdida de información personal...')
             elif message.text.lower()[14] == "[":
                 email = message.text.lower()[15:message.text.lower().find("]")]
                 bkeyboard = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -64,7 +64,7 @@ while True:
                                              reply_markup=bkeyboard)
                             count = i + 1
                         bot.send_message(message.chat.id, "Here " + str(
-                            count) + " message we're found\nHaga clic en el botón de abajo para leer el mensaje\n\n Further Queries @blankito08")
+                            count) + " message encontrado\nHaga clic en el botón de abajo para leer el mensaje\n\n by @blankito08")
                     else:
                         bot.send_message(message.chat.id, 'Nothing found', reply_markup=bkeyboard)
                 except BaseException:
