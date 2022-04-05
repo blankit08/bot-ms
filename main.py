@@ -20,7 +20,7 @@ while True:
         @bot.message_handler(commands=['start'])
         def start_message(message):
             bot.send_message(message.chat.id,
-                             'Hey User., Welcome to MysteryMail Bot \nUsage:_\nTo Generate emails by clicking on the button "Generate email"\nTo refresh your inbox click on the button "Refresh inbox". After a new letter arrives, you will see a button with a subject line, click on this button to read the message. \n\n Dev : @riz4d',
+                             'Hey User., Bienvenido a Fakems Bot \nUsage:_\nPara generar correos electrónicos haciendo clic en el button "Generate email"\nTo refresh your inbox click on the button "Refresh inbox". After a new letter arrives, you will see a button with a subject line, click on this button to read the message. \n\n Dev : @riz4d',
                              reply_markup=keyboard)
 
 
